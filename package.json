@@ -1,0 +1,27 @@
+{
+  "name": "forge-get-hubs",
+  "version": "1.0.0",
+  "description": "Lambda function to retrieve hubs",
+  "main": "app.js",
+  "scripts": {
+    "create": "claudia create --name forge-get-hubs --region us-east-1 --api-module app --version demo",
+    "destroy": "claudia destroy",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "claudia update --version demo"
+  },
+  "keywords": [
+    "Autodesk",
+    "Forge",
+    "Lambda",
+    "Hubs"
+  ],
+  "author": "Bastien Mazeran",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.254.1",
+    "claudia-api-builder": "^4.0.2",
+    "es6-promise": "^4.2.4",
+    "forge-apis": "^0.4.1",
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
